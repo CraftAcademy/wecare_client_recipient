@@ -14,5 +14,25 @@ const FoodBagService = {
       payload: response.data.foodbags,
     })
   },
+
+  async update(foodbag) {
+    const headers = JSON.parse(await AsyncStorage.getItem('auth-storage'))
+    try {
+      let response = await axios.put(
+        API_URL + `/foodbags/${foodbag.id}`,
+        {
+          status: 'reserved',
+        },
+        {
+          headers: headers,
+        }
+      )
+
+      alert(response.data.message)
+    } catch (error) {
+      console.log(error)
+    }
+  },
 }
+
 export default FoodBagService

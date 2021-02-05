@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Auth from '../modules/auth'
-import { Button, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
+import { Button } from 'react-native-elements'
 import { TextInput } from 'react-native-gesture-handler'
 import AsyncStorage from '@react-native-community/async-storage'
 
@@ -59,8 +61,9 @@ const RegisterForm = ({ navigation }) => {
       />
       <Button
         style={styles.button}
-        color='#CC5095'
         title='Register'
+        type='solid'
+        color='#8FBC8F'
         onPress={() => authenticateUser(navigation)}
       />
       {message && <Text>{message}</Text>}
@@ -72,7 +75,7 @@ const styles = StyleSheet.create({
   input: {
     width: 350,
     height: 55,
-    backgroundColor: '#CC5095',
+    backgroundColor: '#b299e5',
     margin: 10,
     padding: 8,
     color: 'white',
@@ -85,20 +88,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  button: {
-    flexDirection: 'row',
-    height: 65,
-    backgroundColor: '#CC5095',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 40,
-    elevation: 3,
-    margin: 39,
-    borderRadius: 20,
-  },
   partner: {
     fontSize: 30,
-    color: '#CC5095',
+    color: '#9370DB',
     textAlign: 'center',
     fontWeight: 'bold',
     paddingBottom: 10,
