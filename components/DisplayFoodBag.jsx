@@ -13,7 +13,6 @@ const DisplayFoodBag = ({ foodbag, id }) => {
 
   const toggleSwitch = async foodbag => {
     setSwitchValue(true)
-    debugger
     let response = await FoodBagService.update(foodbag)
   }
 
