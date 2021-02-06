@@ -49,18 +49,20 @@ export default DisplayFoodBag
 
 const styles = StyleSheet.create({
   storeImage: {
-    height: 60,
-    width: 60,
+    height: 70,
+    width: 70,
     borderRadius: 20,
     padding: 10,
     marginBottom: 2,
   },
   coName: {
-    fontSize: 20,
+    fontSize: 25,
+    color: '#9977DB',
+    fontWeight: 'bold'
   },
   coAdress: {
-    fontSize: 15,
-    paddingBottom: 10,
+    fontSize: 17,
+    paddingBottom: 12,
   },
   foodbagInfo: {
     fontSize: 18,
@@ -69,7 +71,7 @@ const styles = StyleSheet.create({
   },
   foodbagReserve: {
     fontSize: 20,
-    color: '#9370DB',
+    color: '#6699FF',
     marginBottom: 5,
     fontWeight: 'bold',
   },
@@ -78,9 +80,11 @@ const styles = StyleSheet.create({
     color: '#9370DB',
   },
   toggle: {
-    fontSize: 18,
+    fontSize: 20,
     padding: 3,
     marginBottom: 5,
     marginTop: 2,
+    color: '#8FBC8F',
+    fontWeight: 'bold',
   },
 })

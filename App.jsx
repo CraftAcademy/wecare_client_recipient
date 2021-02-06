@@ -26,6 +26,8 @@ const App = () => {
               iconName = focused ? 'home-outline' : 'home-outline'
             } else if (route.name === 'RegisterForm') {
               iconName = focused ? 'person-outline' : 'person-outline'
+            } else if (route.name === 'DisplayFoodBagsList') {
+              iconName = focused ? 'heart-outline' : 'heart-outline'
             }
             return <Ionicons name={iconName} size={size} color={color} />
           },
